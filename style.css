@@ -1,0 +1,401 @@
+body {
+  font-family: 'Caesar Dressing';font-size: 22px;
+  line-height: 1.6em;
+  letter-spacing: .04em;
+  color: #393939;
+  
+}
+.slideshow { z-index: -99; } /* keeps this behind all content */
+.slideshow .picture {
+    position: fixed; 
+    width: 100%; height: 100%;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s; 
+
+}
+.slideshow .one {
+    /*background: url(../IMG/calvin_hobbes2.jpg);*/
+    background:  url(spartan_top.jpeg) center top fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6em;
+    letter-spacing: .04em;
+    color: #393939;
+    left:0;
+    opacity: 1 !important; 
+
+    
+}
+.slideshow .two {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(sambo.jpeg) center top fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6em;
+    letter-spacing: .04em;
+    color: #393939;
+    left:0;
+}
+.slideshow .three {
+  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(tyson.jpeg) center top fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.6em;
+  letter-spacing: .04em;
+  color: #393939;
+  left:0;
+}
+
+.slideshow .active.left {
+    left:0;
+    opacity:0;
+    z-index:2;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background: #ccc;
+}
+
+#myVideo {
+  position: fixed;
+  opacity: .2;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  min-height: 500px
+    /* Set slide height here */
+
+}
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 3s;
+  transition-timing-function:linear;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: .5;
+}
+
+.carousel-fade .carousel-control {
+  z-index: -2;
+}
+   
+
+.carousel-control.left {
+  /* padding: 5px 50px 40px 5px; */
+  /* padding: 25px 0px; */
+  width: 50px;
+  height: 50px;
+  z-index: 2100;
+  color: skyblue;
+  background-color: black;
+  /* opacity: .5; */
+  border-radius: 100%;
+}
+
+.carousel-control.right { 
+  /*padding: 25px 0px;*/
+  width: 50px;
+  height: 50px;
+  z-index: 2100;
+  color: black;
+  background-color: black;
+  /* opacity: .5; */
+  border-radius: 100%;
+  position: absolute;
+  right: 0;	
+}
+
+.carousel-control.left:hover,.carousel-control.right:hover,.carousel-control.left:active,.carousel-control.right:active {
+  background-color: skyblue;
+  color: skyblue;
+  /* opacity: .8; */
+}
+
+img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8%;
+  
+}
+
+.item .itemactive {
+   padding: 5em;
+   
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left
+}
+
+table tr:nth-child(even) {
+  background-color: #eee;
+}
+
+table tr:nth-child(odd) {
+ background-color: #fff;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+h1 {
+  font-family: 'Caesar Dressing';
+  letter-spacing: .05em;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-family: 'Caesar Dressing';
+  padding-bottom: .5em;
+  margin-bottom: 2em;
+  /* border-bottom: .5px solid #ccc; */
+  color: #0E1826;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1.5em;
+  padding-top: .5em;
+  border-top: 1px solid #ccc;
+}
+
+h4 {
+  font-family: 'Caesar Dressing';
+  text-transform: uppercase;
+  font-size: 1em;
+  opacity: .6;
+}
+
+h5 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-family: 'Caesar Dressing';
+  padding-bottom: .5em;
+  margin-bottom: 2em;
+  color: #0E1826;
+  border-bottom: .5px solid #ccc;
+}
+
+i {
+  margin: .5em .5em;
+  color: white;
+}
+
+header {
+  /*height: 90vh;*/
+  margin-top: 0;
+  width: 100%;
+  position: fixed;
+  /*z-index: -99;*/
+}
+
+main {
+  background-color: whitesmoke;
+  top: 100vh;
+  position: relative;
+  z-index: 1000;
+}
+
+
+.flexy {
+  display: flex;
+} 
+
+.btn {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+a:hover, .btn:hover, i:hover {
+  color: skyblue;
+}
+
+.btn:hover {
+  background-color: skyblue;
+  color: black;
+  opacity: 0.6;
+  border-color: skyblue;
+}
+
+.avatar {
+  border-radius: 100%;
+  height: 200px;
+  width: 200px;
+  z-index: 1;
+}
+
+.header {
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  vertical-align: middle;
+  text-align: center;
+  color: skyblue;
+}
+
+
+
+.contactIcons {
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  /*z-index: 1000;*/
+}
+
+.glyphicon-menu-down {
+  font-size: 1.1em;
+  margin-top: 2em;
+}
+
+.glyphicon:hover {
+  color: black;
+}
+
+
+.projects .h5stick {
+  background-color: whitesmoke;
+}
+
+ .h5stick, .ethos .h5stick {
+  background-color: whitesmoke;
+}
+
+.h5stick {
+  background-color: whitesmoke;
+  position: -webkit-sticky;
+  position: sticky;
+  padding-top: .1em;
+  top: 0;
+  z-index: 2100;
+}
+ .container{
+ text-align: center;
+ }
+
+.row {
+	text-align: center;
+}
+
+.schedule {
+  position: -webkit-sticky;
+  position: sticky;
+  padding-top: .1em;
+  top: 0;
+  z-index: 2100;;
+}
+
+.thumbnail {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: none !important;
+  font-family: 'Times New Roman', Times, serif;
+  transition: all 700ms ease-in-out;
+  opacity: .6;
+  text-align: center;
+  
+
+}
+
+.caption {
+  min-height:250px; 
+  height: 100% !important; 
+  height: 250px;
+  text-align: center;
+
+}
+
+
+.thumbnail:hover, .thumbnail:active {
+  opacity: 1;
+}
+
+.schedule>div {
+  margin-bottom: 2em;
+}
+
+.contact {
+  text-align: center;
+}
+
+
+  
+
+.email {
+  font-family: 'Varela Round', sans-serif;
+}
+
+.footer {
+  justify-content: space-around;
+  font-size: .8em;
+  margin: .5em;
+  opacity: 0.5;
+}
+
+
+/*Back to top */
+
+.back-to-top {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  padding: 10px;
+  z-index: 2100;
+  display: none;
+  color: grey;
+  background-color: #555;
+  opacity: .5;
+  border-radius: 100%;
+}
+
+.back-to-top:hover, .back-to-top:active {
+  background-color: skyblue;
+  opacity: .8;
+  -webkit-animation: back-to-top .6s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: back-to-top .6s;
+  /* Firefox < 16 */
+  -ms-animation: back-to-top .6s;
+  /* Internet Explorer */
+  -o-animation: back-to-top .6s;
+  /* Opera < 12.1 */
+  animation: back-to-top .6s;
+}
+
